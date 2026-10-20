@@ -1,331 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Raffy A. Odani — Amazon Virtual Assistant, procurement, inventory and operations professional.">
-  <meta name="theme-color" content="#10251f">
-  <title>Raffy A. Odani | Amazon VA & Operations Portfolio</title>
-  <style>
-:root {
-  --ecommerce-navy: #14213d;
-  --ecommerce-orange: #f59e0b;
-  --ecommerce-white: #ffffff;
-  --ecommerce-light: #f4f7fb;
-  --ecommerce-text: #253047;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raffy A. Odani | Amazon Seller Virtual Assistant</title>
+<meta name="description" content="Amazon seller virtual assistant with 11+ years of procurement and operations experience. Product research, supplier sourcing, keyword research, listing optimization and inventory management.">
+<meta name="theme-color" content="#0b2545">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raffy A. Odani | Amazon Seller Virtual Assistant">
+<meta property="og:description" content="Product research, supplier sourcing and inventory support for Amazon sellers.">
+<style>
+:root{--navy:#0b2545;--navy2:#13315c;--white:#fff;--gray:#f1f3f6;--line:#dde2ea;--ink:#16202e;--mute:#4a5568;--or:#ff8a3d;--or-d:#b34700;--r:14px;--max:1140px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--navy2)}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px;border-radius:4px}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--or);color:var(--navy);padding:10px 16px;font-weight:700;z-index:99}
+.skip:focus{left:8px}
+h1,h2,h3{color:var(--navy);line-height:1.15;margin:0;letter-spacing:-.02em}
+h2.t{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:12px}
+h3{font-size:1.2rem}
+.sub{color:var(--mute);max-width:60ch;margin:0 0 36px}
+section{padding:84px 0}
+.gray{background:var(--gray)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:8px;font:700 1rem inherit;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.b-or{background:var(--or);color:var(--navy)}
+.b-or:hover{background:#ff9d5c;color:var(--navy)}
+.b-navy{background:var(--navy);color:#fff}
+.b-navy:hover{background:var(--navy2);color:#fff}
+.b-line{border-color:#fff;color:#fff}
+.b-line:hover{background:rgba(255,255,255,.12);color:#fff}
+.b-out{border-color:var(--navy);color:var(--navy);background:transparent}
+.b-out:hover{background:var(--navy);color:#fff}
+header{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:3px solid var(--or)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.1rem}
+.mono{width:38px;height:38px;border-radius:9px;background:var(--or);color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:.95rem}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;align-items:center}
+nav a:not(.btn){display:block;padding:10px 11px;color:#e3e9f3;text-decoration:none;font-size:.95rem;border-radius:6px}
+nav a:not(.btn):hover{background:rgba(255,255,255,.1);color:#fff}
+#menu{display:none;min-height:44px;padding:0 14px;border:2px solid #fff;background:transparent;color:#fff;font:700 .95rem inherit;border-radius:8px;cursor:pointer}
+@media(max-width:980px){
+#menu{display:inline-block}
+nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--navy);padding:10px 20px 20px;border-bottom:3px solid var(--or)}
+nav ul.open{display:flex}
+nav li:last-child{margin-top:8px}
 }
-
-body {
-  background: var(--ecommerce-light);
-  color: var(--ecommerce-text);
-}
-
-header,
-nav {
-  background: var(--ecommerce-white);
-}
-
-h1, h2, h3 {
-  color: var(--ecommerce-navy);
-}
-
-.btn-primary {
-  background: var(--ecommerce-orange);
-  color: var(--ecommerce-navy);
-  border-color: var(--ecommerce-orange);
-}
-
-.btn-secondary {
-  background: var(--ecommerce-white);
-  color: var(--ecommerce-navy);
-  border-color: #d5dce7;
-}
-
-.credential,
-.project-card,
-.card {
-  background: var(--ecommerce-white);
-  border: 1px solid #e1e7ef;
-  border-radius: 14px;
-}
-
-a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-  </style>
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:84px 0 92px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.8rem);letter-spacing:-.03em;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--or)}
+.hero p.lead{font-size:1.15rem;color:#d4deec;max-width:58ch;margin:0 0 30px}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px;padding:0;list-style:none}
+.pills li{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 14px;font-size:.88rem;color:#e3e9f3}
+.hcard{background:#fff;color:var(--ink);border-radius:18px;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.avatar{width:96px;height:96px;border-radius:50%;border:2px dashed var(--navy2);background:var(--gray);display:grid;place-items:center;color:var(--navy);font-weight:800;font-size:1.4rem;margin-bottom:14px}
+.hcard h2{font-size:1.35rem;color:var(--navy)}
+.hcard p{margin:4px 0 0;color:var(--mute);font-size:.95rem}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.stat{background:var(--gray);border-radius:10px;padding:14px;border-left:4px solid var(--or)}
+.stat strong{display:block;font-size:1.6rem;color:var(--navy);line-height:1.1}
+.stat span{font-size:.8rem;color:var(--mute);line-height:1.35;display:block;margin-top:4px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:10px;border-top:4px solid var(--navy)}
+.svc p{margin:0;color:var(--mute);font-size:.97rem}
+.svc-ico{width:48px;height:48px;border-radius:12px;background:var(--navy);color:var(--or);display:grid;place-items:center}
+.basis{margin-top:auto;padding-top:10px;font-size:.85rem;color:var(--or-d);font-weight:600;border-top:1px solid var(--line)}
+.pg{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+@media(max-width:420px){.pg{grid-template-columns:1fr}}
+.project{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;box-shadow:0 2px 0 rgba(11,37,69,.04)}
+.ph-img{aspect-ratio:16/9;border:2px dashed #8ea0b8;background:var(--gray);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--navy2);font-size:.88rem;text-align:center;padding:12px;margin-bottom:18px}
+.project-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.project-number{font-size:.85rem;font-weight:700;color:var(--mute)}
+.project-type{font-size:.8rem;font-weight:700;padding:4px 10px;border-radius:6px}
+.project-type.train{background:#ffe9d9;color:#7a3000}
+.project-type.work{background:#dde7f5;color:var(--navy)}
+.project h3{font-size:1.28rem;margin:14px 0 12px}
+.project p{color:var(--mute);font-size:.95rem;margin:0 0 10px}
+.project p strong{color:var(--ink)}
+.project ul{padding-left:20px;margin:0 0 12px;color:var(--mute);font-size:.95rem}
+.project li{margin:4px 0}
+.outcome{border-top:1px solid var(--line);padding-top:12px;margin-top:auto!important}
+.note{background:var(--gray);border-left:4px solid var(--or);border-radius:6px;padding:10px 12px;font-size:.85rem;color:var(--mute);margin-top:10px}
+.skill-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.skill-icon{width:42px;height:42px;border-radius:10px;background:var(--navy);color:var(--or);display:grid;place-items:center;font-size:1.15rem;font-weight:800}
+.skill-card h3{margin:14px 0 12px}
+.tag-list{display:flex;flex-wrap:wrap;gap:7px}
+.tag{background:var(--gray);border:1px solid var(--line);border-radius:6px;padding:4px 9px;font-size:.84rem;color:var(--ink)}
+.small{font-size:.88rem;color:var(--mute);margin-top:18px}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.panel p{margin-top:0;color:var(--mute)}
+.principle{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.principle:last-child{border-bottom:0}
+.check{flex:0 0 28px;height:28px;border-radius:8px;background:var(--or);color:var(--navy);display:grid;place-items:center;font-weight:900}
+.principle strong{display:block;color:var(--navy)}
+.principle span{color:var(--mute);font-size:.92rem}
+.tl{display:grid}
+.timeline-item{display:grid;grid-template-columns:170px 1fr;gap:28px;padding:26px 0;border-top:1px solid #c9d1de}
+.timeline-date{color:var(--or-d);font-weight:700;font-size:.9rem}
+.timeline-content h3{margin-bottom:4px}
+.company{color:var(--mute);font-size:.95rem;margin-bottom:10px}
+.timeline-content ul{margin:0;padding-left:20px;color:var(--mute);font-size:.95rem}
+.timeline-content li{margin:5px 0}
+@media(max-width:640px){.timeline-item{grid-template-columns:1fr;gap:6px}}
+.cred{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:10px;border-top:4px solid var(--or)}
+.cred p{margin:0;color:var(--mute);font-size:.95rem}
+.cred .acts{margin-top:8px}
+.kick{font-size:.88rem;font-weight:700;color:var(--or-d)}
+.contact{background:var(--navy);color:#fff}
+.contact h2{color:#fff}
+.cgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media(max-width:860px){.cgrid{grid-template-columns:1fr}}
+.contact p{color:#d4deec}
+.clinks{display:grid;gap:10px}
+.clink{display:block;padding:14px 16px;border:1px solid rgba(255,255,255,.25);border-radius:10px;color:#fff;text-decoration:none;overflow-wrap:anywhere}
+.clink:hover{background:rgba(255,255,255,.1);color:#fff}
+.clink small{display:block;color:var(--or);font-weight:700;font-size:.8rem}
+footer{background:#07182e;color:#b9c6da;padding:32px 0;font-size:.88rem}
+footer a{color:#fff}
+.frow{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer p{margin:0 0 6px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
 </head>
 <body>
-  <div class="nav-shell">
-    <nav class="wrap" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Raffy A. Odani home">
-        <span class="monogram">RO</span><span>Raffy Odani</span>
-      </a>
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a>
-      </div>
-      <a class="nav-cta" href="#contact">Let's connect ↗</a>
-    </nav>
-  </div>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">Amazon VA · Procurement · Operations</div>
-          <h1>Turning organized operations into <span>e-commerce support.</span></h1>
-          <p class="hero-copy">I'm Raffy — a procurement and operations professional with 11+ years of F&amp;B experience in Saudi Arabia, now applying my strengths in sourcing, inventory, data, and coordination to Amazon Virtual Assistant and e-commerce support.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
-            <a class="btn btn-secondary" href="#contact">Contact me</a>
-          </div>
-          <div class="hero-meta">
-            <span class="pill">11+ years F&amp;B operations</span>
-            <span class="pill">~200 SKUs monitored</span>
-            <span class="pill">Odoo ERP · Excel · Asana · Seller Central · Slack</span>
-          </div>
-        </div>
-        <aside class="hero-card" aria-label="Professional summary">          <img
-  src="profile.jpg"
-  alt="Raffy Odani - Amazon Virtual Assistant"
-  style="width:180px; height:180px; object-fit:cover; border-radius:50%;"
-/>
-          <h2>Raffy Odani</h2>
-          <p>Amazon Virtual Assistant · Procurement &amp; Inventory Operations</p>
-          <div class="stat-grid">
-            <div class="stat"><strong>11+</strong><span>Years of F&amp;B and operations experience</span></div>
-            <div class="stat"><strong>~200</strong><span>SKUs monitored in purchasing</span></div>
-            <div class="stat"><strong>4 yrs</strong><span>Shift Manager experience</span></div>
-            <div class="stat"><strong>2026</strong><span>Amazon VA internship training</span></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="section-kicker">About me</div><h2 class="section-title">Operational experience.<br>Digital-first mindset.</h2></div>
-          <p class="section-intro">I bring the detail, follow-through, and process discipline of real-world operations to e-commerce support.</p>
-        </div>
-        <div class="about-grid">
-          <div class="panel">
-            <p>My background spans purchasing, warehouse coordination, inventory control, data entry, and restaurant operations in Saudi Arabia. In my Purchasing Assistant role, I coordinated with suppliers, Operations, Warehouse, Central Kitchen, and Finance while maintaining purchasing and inventory records.</p>
-            <p>Through Amazon Private Label Virtual Assistant internship training, I developed practical skills in product research, supplier sourcing, keyword research, listing optimization, and inventory management. I am now building a portfolio that connects my established operations experience with e-commerce support.</p>
-            <div class="hero-actions">
-  <a class="btn btn-primary"
-     href="amazon-va-certificate.pdf"
-     target="_blank"
-     rel="noopener noreferrer">
-    View My Certificate ↗
-  </a>
-
-  <a class="btn btn-secondary"
-     href="amazon-va-certificate.pdf"
-     download>
-    Download Certificate ↓
-  </a>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap bar">
+<a class="brand" href="#home" aria-label="Raffy A. Odani, home"><span class="mono" aria-hidden="true">RO</span>Raffy Odani</a>
+<nav aria-label="Main navigation">
+<button id="menu" aria-expanded="false" aria-controls="navlist">Menu</button>
+<ul id="navlist"><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Tools &amp; Skills</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#certificates">Certificates</a></li><li><a class="btn b-or" href="#contact" style="min-height:44px;padding:0 18px">Contact</a></li></ul>
+</nav>
 </div>
-          </div>
-          <div class="panel">
-            <div class="principles">
-              <div class="principle"><div class="check">✓</div><div><strong>Structured and accurate</strong><span>Organized records, careful data checks, and clear documentation.</span></div></div>
-              <div class="principle"><div class="check">✓</div><div><strong>Supplier and workflow coordination</strong><span>Follow-ups, quotation comparisons, order tracking, and issue escalation.</span></div></div>
-              <div class="principle"><div class="check">✓</div><div><strong>Inventory-minded</strong><span>Stock monitoring, consumption review, replenishment support, and discrepancy checks.</span></div></div>
-              <div class="principle"><div class="check">✓</div><div><strong>Ready to keep learning</strong><span>Transferring proven operational habits into Amazon and e-commerce workflows.</span></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+</header>
+<main id="main">
+<section class="hero" id="home">
+<div class="wrap hero-grid">
+<div>
+<h1>Product research, sourcing and inventory support for <em>Amazon sellers.</em></h1>
+<p class="lead">I'm Raffy, a virtual assistant with 11+ years of procurement and F&amp;B operations experience in Saudi Arabia. I help sellers organize product research, supplier information, keywords, listings and inventory so decisions are easier to make.</p>
+<div class="acts"><a class="btn b-or" href="#contact">Work with me</a><a class="btn b-line" href="#projects">View portfolio projects</a></div>
+<ul class="pills"><li>11+ years F&amp;B operations</li><li>About 200 SKUs monitored</li><li>Excel · Odoo ERP · Asana</li></ul>
+</div>
+<aside class="hcard" aria-label="Professional summary">
+<div class="avatar" role="img" aria-label="Photo placeholder">RO</div>
+<h2>Raffy A. Odani</h2>
+<p>Amazon Seller Virtual Assistant · Procurement &amp; Inventory Operations</p>
+<div class="stats">
+<div class="stat"><strong>11+</strong><span>Years of F&amp;B and operations experience</span></div>
+<div class="stat"><strong>~200</strong><span>SKUs monitored in purchasing</span></div>
+<div class="stat"><strong>4 yrs</strong><span>As Shift Manager</span></div>
+<div class="stat"><strong>2026</strong><span>Amazon VA internship training</span></div>
+</div>
+</aside>
+</div>
+</section>
 
-    <section id="skills" style="background:#eff3ed">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="section-kicker">Skills &amp; tools</div><h2 class="section-title">A practical toolkit<br>for organized work.</h2></div>
-          <p class="section-intro">A combination of e-commerce training, procurement experience, data handling, and operations coordination.</p>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <div class="skill-icon">↗</div><h3>Amazon &amp; E-commerce</h3>
-            <div class="tag-list"><span class="tag">Product research</span><span class="tag">Supplier sourcing</span><span class="tag">Keyword research</span><span class="tag">Listing optimization</span><span class="tag">Inventory management</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-icon">▤</div><h3>Procurement &amp; Sourcing</h3>
-            <div class="tag-list"><span class="tag">Quotation comparison</span><span class="tag">Supplier coordination</span><span class="tag">PO follow-up</span><span class="tag">Pricing analysis</span><span class="tag">Delivery tracking</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-icon">▦</div><h3>Inventory &amp; Operations</h3>
-            <div class="tag-list"><span class="tag">Stock monitoring</span><span class="tag">Replenishment support</span><span class="tag">Physical counts</span><span class="tag">Receiving &amp; dispatch</span><span class="tag">Discrepancy tracking</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-icon">⌘</div><h3>Data &amp; Reporting</h3>
-            <div class="tag-list"><span class="tag">Excel-based tracking</span><span class="tag">Data entry</span><span class="tag">Data validation</span><span class="tag">Operational reporting</span><span class="tag">Documentation</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-icon">⚙</div><h3>Tools &amp; Systems</h3>
-            <div class="tag-list"><span class="tag">Microsoft Excel</span><span class="tag">Odoo ERP</span><span class="tag">Asana</span><span class="tag">Microsoft Word</span><span class="tag">PowerPoint</span></div>
-          </article>
-          <article class="skill-card">
-            <div class="skill-icon">◎</div><h3>Coordination</h3>
-            <div class="tag-list"><span class="tag">Cross-team communication</span><span class="tag">Supplier follow-up</span><span class="tag">Issue resolution</span><span class="tag">Order management</span><span class="tag">Administrative support</span></div>
-          </article>
-        </div>
-        <p class="subtle" style="font-size:.82rem;margin-top:18px">Amazon-specific skills reflect internship training and portfolio development. No unverified Seller Central, paid-client, or sales-performance claims are made.</p>
-      </div>
-    </section>
+<section id="services">
+<div class="wrap">
+<h2 class="t">Services for Amazon sellers</h2>
+<p class="sub">Five core areas from my Amazon VA training, supported by hands-on procurement, inventory and data experience.</p>
+<div class="grid"><article class="svc"><div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4a7 7 0 105 12l4 4"/></svg></div><h3>Product research</h3><p>Organize product, pricing, and competitor information side by side so you can compare opportunities before committing to inventory.</p><span class="basis">Based on: Amazon VA training</span></article><article class="svc"><div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h13v10H3zM16 10h3l2 3v4h-5"/></svg></div><h3>Supplier sourcing</h3><p>Request and compare supplier quotations, track follow-ups, and flag missing details that need confirmation.</p><span class="basis">Based on: Procurement experience and VA training</span></article><article class="svc"><div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h6"/></svg></div><h3>Keyword research</h3><p>Research relevant search terms and organize them by relevance and intended use for your listings.</p><span class="basis">Based on: Amazon VA training</span></article><article class="svc"><div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM9 12h7M9 16h7"/></svg></div><h3>Listing optimization</h3><p>Review titles, bullet points, and descriptions for clarity, completeness, and natural keyword use.</p><span class="basis">Based on: Amazon VA training</span></article><article class="svc"><div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8l8-4 8 4v8l-8 4-8-4zM4 8l8 4 8-4M12 12v8"/></svg></div><h3>Inventory management</h3><p>Track stock levels, review usage, support replenishment planning, and investigate gaps between records and physical counts.</p><span class="basis">Based on: Inventory experience, about 200 SKUs</span></article><article class="svc"><div class="svc-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v16H5zM9 9h6M9 13h6M9 17h3"/></svg></div><h3>Admin and data support</h3><p>Keep data entry, validation, reports, and documentation accurate and organized.</p><span class="basis">Based on: Operations and data entry experience</span></article></div>
+</div>
+</section>
 
-    <section id="projects">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="section-kicker">Selected work</div><h2 class="section-title">Projects that show<br>how I work.</h2></div>
-          <p class="section-intro">A mix of professional experience and Amazon VA training areas. Training projects are labeled transparently; add screenshots of your actual deliverables when ready.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project">
-            <div class="project-top"><span class="project-number">PROJECT 01</span><span class="project-type">VA training</span></div>
+<section id="projects" class="gray">
+<div class="wrap">
+<h2 class="t">Portfolio projects</h2>
+<p class="sub">Six case studies. Orange labels mark Amazon VA training projects and blue labels mark professional work. Training projects are demonstrations, not paid client work.</p>
+<div class="pg"><article class="project"><div class="ph-img" role="img" aria-label="Image placeholder: Product research sheet"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg><span>Product research sheet</span></div>
+            <div class="project-top"><span class="project-number">PROJECT 01</span><span class="project-type train">Amazon VA training</span></div>
             <h3>Amazon Private Label Product Research</h3>
             <p><strong>Problem:</strong> Sellers need organized evidence to compare product opportunities before committing to inventory.</p>
             <p><strong>My approach:</strong> I applied product research methods from my Amazon VA internship training to organize product and competitor information for side-by-side review.</p>
             <ul><li>Collected and organized product details and pricing information.</li><li>Compared relevant attributes and flagged information needing further validation.</li><li>Structured findings to support a more consistent evaluation process.</li></ul>
-            <p class="outcome"><strong>Outcome:</strong> A structured research deliverable designed to make comparisons clearer. Add the actual number of products evaluated after confirming your project data.</p>
+            <p class="outcome"><strong>Outcome:</strong> A structured research deliverable designed to make comparisons clearer.</p>
             <div class="note">Portfolio demonstration / internship training — not presented as paid client work.</div>
-          </article>
-          <article class="project">
-            <div class="project-top"><span class="project-number">PROJECT 02</span><span class="project-type">Professional work</span></div>
+          </article><article class="project"><div class="ph-img" role="img" aria-label="Image placeholder: Quotation comparison table"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg><span>Quotation comparison table</span></div>
+            <div class="project-top"><span class="project-number">PROJECT 02</span><span class="project-type work">Professional work</span></div>
             <h3>Supplier Sourcing &amp; Quotation Comparison</h3>
             <p><strong>Problem:</strong> Purchasing decisions required comparable supplier quotations and timely follow-up.</p>
             <p><strong>My role:</strong> As a Purchasing Assistant, I collected quotations, compared prices and product information, and maintained purchasing records.</p>
             <ul><li>Requested and compared supplier quotations.</li><li>Followed up on supplier confirmations, purchase orders, and delivery timelines.</li><li>Coordinated with Operations, Warehouse, Central Kitchen, and Finance.</li></ul>
             <p class="outcome"><strong>Outcome:</strong> Supported purchasing decisions with organized supplier and pricing information across activities involving approximately 200 SKUs.</p>
-          </article>
-          <article class="project">
-            <div class="project-top"><span class="project-number">PROJECT 03</span><span class="project-type">Professional work</span></div>
+          </article><article class="project"><div class="ph-img" role="img" aria-label="Image placeholder: Inventory tracking sheet"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg><span>Inventory tracking sheet</span></div>
+            <div class="project-top"><span class="project-number">PROJECT 03</span><span class="project-type work">Professional work</span></div>
             <h3>Excel Inventory Tracking &amp; Replenishment</h3>
             <p><strong>Problem:</strong> Operations relied on accurate stock information to support production and replenishment.</p>
             <p><strong>My approach:</strong> I used Microsoft Excel and Odoo ERP to support inventory monitoring, stock usage review, and record accuracy.</p>
             <ul><li>Monitored approximately 200 SKUs.</li><li>Maintained product, supplier, pricing, and inventory records.</li><li>Reviewed stock usage and supported replenishment planning.</li><li>Helped investigate differences between system and physical stock.</li></ul>
             <p class="outcome"><strong>Outcome:</strong> Maintained visibility across the monitored SKU range and supported timely replenishment. No unverified accuracy percentage or savings claim is included.</p>
-          </article>
-          <article class="project">
-            <div class="project-top"><span class="project-number">PROJECT 04</span><span class="project-type">VA training</span></div>
+          </article><article class="project"><div class="ph-img" role="img" aria-label="Image placeholder: Keyword research and listing draft"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg><span>Keyword research and listing draft</span></div>
+            <div class="project-top"><span class="project-number">PROJECT 04</span><span class="project-type train">Amazon VA training</span></div>
             <h3>Keyword Research &amp; Listing Optimization</h3>
             <p><strong>Problem:</strong> Product listings need relevant search terms and clear content to communicate an offer effectively.</p>
             <p><strong>My approach:</strong> I practiced keyword research and listing content optimization as part of my Amazon VA training.</p>
             <ul><li>Researched relevant product keywords.</li><li>Organized keywords by relevance and intended use.</li><li>Reviewed title, feature bullets, and descriptions for clarity.</li></ul>
             <p class="outcome"><strong>Outcome:</strong> Developed practical skills in keyword organization and listing content planning. Ranking, traffic, and conversion improvements have not been verified.</p>
-            <div class="note">Add a sample listing and keyword sheet here after removing confidential or licensed data.</div>
-          </article>
-          <article class="project">
-            <div class="project-top"><span class="project-number">PROJECT 05</span><span class="project-type">Professional work</span></div>
+            
+          </article><article class="project"><div class="ph-img" role="img" aria-label="Image placeholder: Receiving and dispatch workflow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg><span>Receiving and dispatch workflow</span></div>
+            <div class="project-top"><span class="project-number">PROJECT 05</span><span class="project-type work">Professional work</span></div>
             <h3>Warehouse, Receiving &amp; Delivery Coordination</h3>
             <p><strong>Problem:</strong> Central Kitchen and warehouse operations required accurate receiving, stock control, and coordinated deliveries to stores.</p>
             <p><strong>My role:</strong> As a Shift Manager, I supervised daily operational workflows and monitored stock availability.</p>
             <ul><li>Oversaw receiving, stocking, order preparation, and dispatch.</li><li>Conducted daily, weekly, and monthly inventory counts.</li><li>Inspected incoming goods for quantity and quality discrepancies.</li><li>Coordinated store deliveries and reported supply issues.</li></ul>
             <p class="outcome"><strong>Outcome:</strong> Supported the movement of goods between warehouse, Central Kitchen, and stores through recurring inventory checks and delivery coordination.</p>
-          </article>
-          <article class="project">
-            <div class="project-top"><span class="project-number">PROJECT 06</span><span class="project-type">VA training</span></div>
+          </article><article class="project"><div class="ph-img" role="img" aria-label="Image placeholder: Supplier comparison sheet"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg><span>Supplier comparison sheet</span></div>
+            <div class="project-top"><span class="project-number">PROJECT 06</span><span class="project-type train">Amazon VA training</span></div>
             <h3>Supplier Evaluation for E-commerce</h3>
             <p><strong>Problem:</strong> Sellers need a structured way to review supplier options and organize product-related information.</p>
             <p><strong>My approach:</strong> I apply transferable procurement practices alongside supplier research methods learned during Amazon VA training.</p>
             <ul><li>Organize supplier details and product specifications.</li><li>Compare available information in a clear format.</li><li>Identify missing details that need supplier confirmation.</li></ul>
-            <p class="outcome"><strong>Outcome:</strong> A repeatable supplier comparison approach grounded in my purchasing experience. Add a real, anonymized comparison sheet to demonstrate the workflow.</p>
+            <p class="outcome"><strong>Outcome:</strong> A repeatable supplier comparison approach grounded in my purchasing experience.</p>
             <div class="note">Training / portfolio demonstration — validate all supplier information before making purchasing decisions.</div>
-          </article>
-        </div>
-      </div>
-    </section>
+          </article></div>
+</div>
+</section>
 
-    <section id="experience" style="background:#eff3ed">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="section-kicker">Career timeline</div><h2 class="section-title">Built through hands-on<br>experience.</h2></div>
-          <p class="section-intro">Progression across restaurant operations, data management, warehouse coordination, and purchasing.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
+<section id="skills">
+<div class="wrap">
+<h2 class="t">Tools &amp; skills</h2>
+<p class="sub">E-commerce training combined with procurement experience, data handling and operations coordination.</p>
+<div class="grid"><article class="skill-card">
+            <div class="skill-icon">↗</div><h3>Amazon &amp; E-commerce</h3>
+            <div class="tag-list"><span class="tag">Product research</span><span class="tag">Supplier sourcing</span><span class="tag">Keyword research</span><span class="tag">Listing optimization</span><span class="tag">Inventory management</span></div>
+          </article><article class="skill-card">
+            <div class="skill-icon">▤</div><h3>Procurement &amp; Sourcing</h3>
+            <div class="tag-list"><span class="tag">Quotation comparison</span><span class="tag">Supplier coordination</span><span class="tag">PO follow-up</span><span class="tag">Pricing analysis</span><span class="tag">Delivery tracking</span></div>
+          </article><article class="skill-card">
+            <div class="skill-icon">▦</div><h3>Inventory &amp; Operations</h3>
+            <div class="tag-list"><span class="tag">Stock monitoring</span><span class="tag">Replenishment support</span><span class="tag">Physical counts</span><span class="tag">Receiving &amp; dispatch</span><span class="tag">Discrepancy tracking</span></div>
+          </article><article class="skill-card">
+            <div class="skill-icon">⌘</div><h3>Data &amp; Reporting</h3>
+            <div class="tag-list"><span class="tag">Excel-based tracking</span><span class="tag">Data entry</span><span class="tag">Data validation</span><span class="tag">Operational reporting</span><span class="tag">Documentation</span></div>
+          </article><article class="skill-card">
+            <div class="skill-icon">⚙</div><h3>Tools &amp; Systems</h3>
+            <div class="tag-list"><span class="tag">Microsoft Excel</span><span class="tag">Odoo ERP</span><span class="tag">Asana</span><span class="tag">Microsoft Word</span><span class="tag">PowerPoint</span></div>
+          </article><article class="skill-card">
+            <div class="skill-icon">◎</div><h3>Coordination</h3>
+            <div class="tag-list"><span class="tag">Cross-team communication</span><span class="tag">Supplier follow-up</span><span class="tag">Issue resolution</span><span class="tag">Order management</span><span class="tag">Administrative support</span></div>
+          </article></div>
+<p class="small">Amazon-specific skills reflect internship training and portfolio development. No Seller Central, paid-client or sales-performance claims are made.</p>
+</div>
+</section>
+
+<section id="about" class="gray">
+<div class="wrap">
+<h2 class="t">About me</h2>
+<p class="sub">Operational experience with a digital-first mindset.</p>
+<div class="two">
+<div class="panel"><p>My background spans purchasing, warehouse coordination, inventory control, data entry, and restaurant operations in Saudi Arabia. In my Purchasing Assistant role, I coordinated with suppliers, Operations, Warehouse, Central Kitchen, and Finance while maintaining purchasing and inventory records.</p><p>Through Amazon Private Label Virtual Assistant internship training, I developed practical skills in product research, supplier sourcing, keyword research, listing optimization, and inventory management. I am now building a portfolio that connects my established operations experience with e-commerce support.</p>
+<div class="acts"><a class="btn b-navy" href="amazon-va-certificate.pdf" target="_blank" rel="noopener noreferrer">View My Certificate</a><a class="btn b-out" href="amazon-va-certificate.pdf" download>Download Certificate</a></div>
+</div>
+<div class="panel"><div class="principle"><div class="check">✓</div><div><strong>Structured and accurate</strong><span>Organized records, careful data checks, and clear documentation.</span></div></div><div class="principle"><div class="check">✓</div><div><strong>Supplier and workflow coordination</strong><span>Follow-ups, quotation comparisons, order tracking, and issue escalation.</span></div></div><div class="principle"><div class="check">✓</div><div><strong>Inventory-minded</strong><span>Stock monitoring, consumption review, replenishment support, and discrepancy checks.</span></div></div><div class="principle"><div class="check">✓</div><div><strong>Ready to keep learning</strong><span>Transferring proven operational habits into Amazon and e-commerce workflows.</span></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<div class="wrap">
+<h2 class="t">Career experience</h2>
+<p class="sub">Progression across restaurant operations, data management, warehouse coordination and purchasing.</p>
+<div class="tl"><article class="timeline-item">
             <div class="timeline-date">JUL 2025 — JUL 2026</div>
             <div class="timeline-content"><h3>Purchasing Assistant</h3><div class="company">Saldwich – Anmat Al-Tawazun · Riyadh, Saudi Arabia</div>
               <ul><li>Supported Purchase Request processing, Purchase Order preparation, supplier coordination, delivery follow-up, and documentation.</li><li>Compared supplier quotations and maintained pricing and inventory records across approximately 200 SKUs.</li><li>Used Odoo ERP and Excel for purchasing, inventory tracking, data management, and reporting.</li><li>Supported invoice validation by matching POs, Goods Receipt Notes, and delivery documents; coordinated returns and credit notes.</li></ul>
             </div>
-          </article>
-          <article class="timeline-item">
+          </article><article class="timeline-item">
             <div class="timeline-date">AUG 2021 — JUL 2025</div>
             <div class="timeline-content"><h3>Shift Manager</h3><div class="company">Saldwich – Anmat Al-Tawazun · Riyadh, Saudi Arabia</div>
               <ul><li>Supervised Central Kitchen and warehouse workflows covering receiving, stocking, order preparation, dispatch, and delivery coordination.</li><li>Conducted daily, weekly, and monthly inventory counts and monitored stock availability.</li><li>Inspected incoming goods and reported quantity, quality, and supplier discrepancies.</li><li>Coordinated deliveries to multiple stores and worked with Purchasing to follow up on supply issues.</li></ul>
             </div>
-          </article>
-          <article class="timeline-item">
+          </article><article class="timeline-item">
             <div class="timeline-date">JUN 2017 — AUG 2021</div>
             <div class="timeline-content"><h3>Data Entry Operator</h3><div class="company">Mawarid Food Company · Riyadh, Saudi Arabia</div>
               <ul><li>Maintained operational records and entered data into company systems.</li><li>Generated reports and reviewed records for errors and inconsistencies.</li><li>Organized electronic and paper documentation and supported order processing.</li></ul>
             </div>
-          </article>
-          <article class="timeline-item">
+          </article><article class="timeline-item">
             <div class="timeline-date">AUG 2015 — MAY 2017</div>
             <div class="timeline-content"><h3>Service Crew / Kitchen Crew</h3><div class="company">Mawarid Food Company · Riyadh, Saudi Arabia</div>
               <ul><li>Supported restaurant operations, stocking, product handling, and order preparation.</li><li>Followed operational procedures and maintained service standards in a fast-paced F&amp;B environment.</li></ul>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+          </article></div>
+</div>
+</section>
 
-    <section id="education">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="section-kicker">Education &amp; development</div><h2 class="section-title">A foundation in systems<br>and operations.</h2></div>
-        </div>
-        <div class="credential-grid">
-          <article class="credential"><div class="section-kicker">Education</div><h3 style="margin-top:10px">Bachelor of Science in Information Technology</h3><p>Computer Networks specialization<br>University of the Immaculate Conception · Davao City, Philippines<br>2009–2015</p></article>
-          <article class="credential"><div class="section-kicker">Professional development</div><h3 style="margin-top:10px">Amazon Private Label Virtual Assistant Internship</h3><p>Training in product research, supplier sourcing, keyword research, listing optimization, and inventory management. Add your certificate link or image when publishing.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="certificates" class="gray">
+<div class="wrap">
+<h2 class="t">Certificates &amp; education</h2>
+<p class="sub">Credentials you can review directly.</p>
+<div class="grid">
+<article class="cred"><span class="kick">Professional development</span><h3>Amazon Seller VA Masterclass</h3><p>Completion certificate from Amazenation OPC, covering product and supplier research, listing optimization, inventory management and related seller support topics. Issued October 17, 2026.</p><div class="acts"><a class="btn b-navy" href="amazon-va-certificate.pdf" target="_blank" rel="noopener noreferrer">View certificate</a><a class="btn b-out" href="amazon-va-certificate.pdf" download>Download</a></div></article>
+<article class="cred"><span class="kick">Education</span><h3>Bachelor of Science in Information Technology</h3><p>Computer Networks specialization<br>University of the Immaculate Conception, Davao City, Philippines<br>2009–2015</p><div class="acts"><a class="btn b-out" href="diploma-bsit.pdf" target="_blank" rel="noopener noreferrer">View diploma</a></div></article>
+</div>
+</div>
+</section>
 
-    <section id="contact">
-      <div class="wrap">
-        <div class="contact-panel">
-          <div>
-            <div class="section-kicker">Contact</div>
-            <h2>Let's put good work in motion.</h2>
-            <p>I'm open to opportunities in Amazon Virtual Assistant support, procurement, inventory, operations, and administrative coordination. If my background matches what your team needs, I'd be glad to connect.</p>
-            <a class="btn" style="background:var(--lime);color:var(--green-dark);margin-top:8px" href="mailto:raffyaderes09@gmail.com?subject=Portfolio%20Inquiry">Email me ↗</a>
-          </div>
-          <div class="contact-links">
-            <a class="contact-link" href="mailto:raffyaderes09@gmail.com"><small>EMAIL</small>raffyaderes09@gmail.com</a>
-            <a class="contact-link" href="tel:+966563775512"><small>PHONE / WHATSAPP</small>+966 563 775 512</a>
-            <a class="contact-link" href="https://www.linkedin.com/in/raffy-odani-31607b365/" target="_blank" rel="noopener noreferrer"><small>LINKEDIN</small>www.linkedin.com/in/raffy-odani-31607b365</a>
-            <a class="contact-link" href="resume.pdf" download><small>RÉSUMÉ</small>Download résumé</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-row">
-      <span>© <span id="year"></span> Raffy A. Odani. Built with care.</span>
-      <span>Amazon VA · Procurement · Inventory · Operations</span>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    menuToggle.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', String(open));
-      menuToggle.textContent = open ? '✕' : '☰';
-    });
-    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.textContent = '☰';
-    }));
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<section id="contact" class="contact">
+<div class="wrap cgrid">
+<div>
+<h2 class="t">Need help organizing your Amazon operations?</h2>
+<p>I'm open to opportunities in Amazon seller virtual assistance, procurement, inventory, operations and administrative coordination. If my background matches what you need, I'd be glad to connect.</p>
+<a class="btn b-or" href="mailto:r.aderesodani@gmail.com?subject=Portfolio%20Inquiry">Email me</a>
+</div>
+<div class="clinks">
+<a class="clink" href="mailto:r.aderesodani@gmail.com"><small>Email</small>r.aderesodani@gmail.com</a>
+<a class="clink" href="tel:+966563775512"><small>Phone / WhatsApp</small>+966 563 775 512</a>
+<a class="clink" href="https://www.linkedin.com/in/raffy-odani-31607b365/" target="_blank" rel="noopener noreferrer"><small>LinkedIn</small>linkedin.com/in/raffy-odani-31607b365</a>
+<a class="clink" href="resume.pdf" download><small>Résumé</small>Download résumé (PDF)</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap frow">
+<div>
+<p>&copy; <span id="year"></span> Raffy A. Odani. Amazon seller virtual assistant · Procurement · Inventory · Operations.</p>
+<p>Independent professional. Not affiliated with, endorsed by or sponsored by Amazon. Amazon is a trademark of Amazon.com, Inc.</p>
+</div>
+<a href="#home">Back to top</a>
+</div>
+</footer>
+<script>
+(function(){
+var b=document.getElementById('menu'),l=document.getElementById('navlist');
+function close(){l.classList.remove('open');b.setAttribute('aria-expanded','false')}
+b.addEventListener('click',function(){b.setAttribute('aria-expanded',l.classList.toggle('open'))});
+l.addEventListener('click',function(e){if(e.target.tagName==='A')close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&l.classList.contains('open')){close();b.focus()}});
+document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
